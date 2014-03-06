@@ -12,9 +12,13 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  -->
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CalendarCellFrame" >
 
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/CalendarCell"
-    android:background="#1fff"
-    android:textColor="@color/foreground_full" />
+    <TextView
+        style="@style/CalendarCell"
+        android:background="#1fff"
+        android:textColor="@color/foreground_full" />
+
+</FrameLayout>

@@ -12,14 +12,21 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  -->
+-->
 
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="CalendarCellFrame">
+        <item name="android:id">@android:id/content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+    </style>
 
     <style name="CalendarCell">
         <item name="android:id">@android:id/text1</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">center</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
